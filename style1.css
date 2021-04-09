@@ -7,7 +7,8 @@
 }
 body {
   font-family: "PT Sans Caption", sans-serif;
-  background-color: #0f1923;
+  background: url(https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+    center bottom / cover no-repeat;
   min-height: 99vh;
   color: rgb(255, 255, 255);
   overflow: hidden;
@@ -18,6 +19,10 @@ body {
   text-align: center;
   padding: 2rem 3rem;
   margin-top: 20px;
+  margin-bottom: 40px;
+}
+h1 {
+  font-size: 4rem;
 }
 .quote {
   height: 15rem;
@@ -55,9 +60,9 @@ body {
 }
 .flex:before {
   background: #ffe897;
-  background: -moz-radial-gradient(top right, #ffe897, #291905);
-  background: radial-gradient(to bottom left, #ffe897, #2c1e0e);
-  background: -webkit-radial-gradient(top right, #ffe897, #0a2833);
+  background: -moz-radial-gradient(top right, #ffe897, #916e45);
+  background: radial-gradient(to bottom left, #ffe897, #916e45);
+  background: -webkit-radial-gradient(top right, #ffe897, #916e45);
 }
 .holder:after {
   animation-delay: 2.5s;
@@ -99,7 +104,7 @@ body {
   margin: 0 auto;
   display: block;
   margin-top: 2rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .btn {
   width: 16rem;
@@ -109,12 +114,16 @@ body {
   cursor: pointer;
   outline: transparent;
 }
+.btn:active {
+  opacity: 0.8;
+}
 
 @media (max-width: 900px) {
   .heading {
     height: 15vh;
     margin: 0;
     padding: 2rem 3rem;
+    margin-bottom: 30px;
   }
   .flex:before,
   .flex:after {
@@ -140,10 +149,16 @@ body {
 }
 
 @media (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .heading {
     height: 10vh;
-    padding: 1rem;
+    padding: 4rem 2rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
   }
   .heading h1 {
     font-size: 2rem;
@@ -156,7 +171,7 @@ body {
   .quote {
     height: 15rem;
     padding: 0.3rem;
-    margin: 5px auto;
+    margin: 5px 1rem;
     margin-top: 2rem;
   }
   .text {
